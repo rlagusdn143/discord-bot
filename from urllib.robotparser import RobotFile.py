@@ -29,5 +29,5 @@ async def on_message(message):
         else:
             await message.channel.send("{}, 당신은 관리자가 아닙니다".format(message.author.mention))
 
-# 봇을 실행시키기 위한 토큰을 작성해주는 곳
-client.run('OTgzNDcxNzE3MTQ4MTYwMTQw.GYkl9G.O4Bm8rhImEPs9V_Ai1Q_Fl5l0tjgKS2woqwyZA')
+access_token = os.environ['BOT_TOKEN']
+client.run(access_token)
