@@ -1,5 +1,6 @@
 from urllib.robotparser import RobotFileParser
 import discord, asyncio, pytz, datetime
+import os
 
 client = discord.Client()
 
